@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background-color: #01073d;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.burger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover {
+  background-color: #fff;
+  color: #01073d;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #01073d;
+    backdrop-filter: blur(30px);
+    top: 45px;
+    right: 0;
+    width: 40%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .nav-links a:hover {
+    color: #01073d;
+    background-color: #fff;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .burger {
+    display: block;
+  }
+  .checkout .container {
+    padding: 0 1rem;
+  }
+
+  .checkout-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    font-size: 1.2rem;
+  }
+
+  .checkout-button {
+    font-size: 1.4rem;
+  }
+
+  .security-note {
+    font-size: 1.2rem;
+  }
+
+  .security-note p {
+    font-size: 1rem;
+  }
+}
+.checkout {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+.checkout .container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #01073d;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-align: center;
+  background-color: #01073d;
+  width: 100%;
+  padding: 1rem;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem #0000003c;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+legend {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #01073d;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 1.4rem;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#test-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  border: 2px solid black;
+  width: 15%;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#test-card p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#test-card i {
+  padding-right: 0.5rem;
+}
+.cc-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.agreement {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.agreement a {
+  color: #01073d;
+  text-decoration: none;
+}
+
+.checkout-button {
+  background-color: #2b305d;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 20%;
+}
+
+.checkout-button:hover {
+  background-color: #141414;
+}
+
+.security-note {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  gap: 1rem;
+  color: #333;
+}
+
+.security-note i {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+.security-note p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #666;
+}

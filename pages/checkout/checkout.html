@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/logo1.png" href="/images/logo1.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
+  </head>
+  <body>
+        <header>
+       <nav class="navbar">
+         <div class="logo">
+                <a class="logo" href="/pages/dashboard/dashboard.html">HH</a>
+            </div>
+        <div class="burger" onclick="toggleNav()">&#9776;</div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/pages/propertyOne/Property1.html">Search properties</a></li>
+          <li><a href="/pages/neighbourhood/neighbourhood.html"
+                >Neighborhood guide</a
+              ></li>
+          <li><a href="/pages/contact/ContactUs.html">Contact Us</a></li>
+          <a href="/pages/lagosNeighbourhood/lagosneighbourhood.html"
+                >Request a property</a
+              ></li>
+              <li><a href="/pages/about/About.html">About Us</a></li>
+              <li><a href="/pages/login/index.html">Log In</a></li>
+            <li><a href="/pages/signUp/signUp.html">Sign Up</a></li>
+        </ul>
+      </nav>
+        </header>
+
+        <section class="checkout">
+          <div class="container">
+            <h1>Make a Purchase From Here</h1>
+            <form id="checkout-form">
+              <p class="subheading">
+                Fill the order form below to complete your purchase
+              </p>
+              <fieldset>
+                <legend>Your basic information</legend>
+                <div class="form-group">
+                  <label for="first-name"></label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    placeholder="First Name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name"></label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    placeholder="Last Name"
+                    name="last-name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email"></label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="company"></label>
+                  <input
+                    type="text"
+                    id="company"
+                    placeholder="Company Name"
+                    name="company"
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Billing address</legend>
+                <div class="form-group">
+                  <label for="street">Street</label>
+                  <input
+                    type="text"
+                    id="street"
+                    placeholder="Street"
+                    name="street"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="city"></label>
+                  <input
+                    type="text"
+                    id="city"
+                    placeholder="City"
+                    name="city"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="country"></label>
+                  <input
+                    type="text"
+                    id="country"
+                    placeholder="Country"
+                    name="country"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="zip"></label>
+                  <input
+                    type="text"
+                    id="zip"
+                    placeholder="Zip Code"
+                    name="zip"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Your payment information</legend>
+                <div id="test-card">
+                  <p><i class="fa-solid fa-credit-card"></i> Test Card</p>
+                </div>
+                <div class="form-group">
+                  <label for="cc-number">Test Card Numbers :</label>
+                  <input
+                    type="text"
+                    id="cc-number"
+                    placeholder="Credit Card Number"
+                    name="cc-number"
+                    required
+                  />
+                </div>
+                <div class="form-group cc-details">
+                  <label for="cc-month"></label>
+                  <select id="cc-month" name="cc-month" required>
+                    <option value="">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <label for="cc-year"></label>
+                  <select id="cc-year" name="cc-year" required>
+                    <option value="">Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                  </select>
+                  <label for="cc-cvv"></label>
+                  <input
+                    type="text"
+                    id="cc-cvv"
+                    placeholder="CVV"
+                    name="cc-cvv"
+                    required
+                  />
+                </div>
+                <p class="agreement">
+                  By clicking Checkout Now you agree to the
+                  <a href="#">Terms of Service</a> and
+                  <a href="#">Privacy Policy</a>
+                </p>
+                <button type="submit" class="checkout-button">
+                  Checkout now
+                </button>
+                <div class="security-note">
+                  <p><i class="fa fa-lock"></i> Secure server</p>
+                  <p>Safe and secure payment checkout</p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      
+                <script src="/nav.js"></script>
+  </body>
+</html>

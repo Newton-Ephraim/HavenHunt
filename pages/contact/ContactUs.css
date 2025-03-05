@@ -1,0 +1,892 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+span {
+  color: #01073d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.burger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover {
+  background-color: #fff;
+  color: #01073d;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+header {
+background-color: #01073d;
+  padding: 1rem;
+}
+
+.Contact-Us h1 {
+  color: #fff;
+  font-family: Space Grotesk;
+  font-size: 4.77rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+
+.Contact-Us h6 {
+  color: #f0f0f0;
+  font-family: Space Grotesk;
+  font-size: 1.92rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  min-height: 35rem;
+  max-width: 100vw;
+}
+
+.Detail div h5 {
+  align-self: stretch;
+  font-size: 2.31rem;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  line-height: 3.2rem;
+}
+
+.Detail div h6 {
+  color: #808080;
+  width: 22.4rem;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.Get-In-Touch h3 {
+  align-self: stretch;
+  color: #303030;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  font-size: 3.318rem;
+  line-height: 3.2rem;
+}
+
+.Get-In-Touch p {
+  width: 46rem;
+  font-size: 1.6rem;
+  align-self: stretch;
+  color: #222222;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+  min-height: 55.2rem;
+}
+
+input {
+  width: 55vh;
+  height: 6.4rem;
+  padding-left: 2rem;
+  font-weight: 500;
+  font-family: Space Grotesk;
+  font-size: 2.3rem;
+  color: #222222;
+}
+
+textarea {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-weight: 500;
+  font-family: Space Grotesk;
+  border-radius: 1rem;
+  font-size: 2.3rem;
+  min-height: 15.2rem;
+  width: 55vh;
+}
+
+button {
+  width: 25.6rem;
+  height: 6.4rem;
+  font-size: 2.7rem;
+  font-family: Space Grotesk sans-serif;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #2b305d;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #01073d;
+  color: white;
+}
+
+.Other-Requests {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Other-Requests-h3 {
+  align-self: stretch;
+  font-family: "SpaceGrotesk-Medium", sans-serif;
+  font-weight: 500;
+  color: #303030;
+  line-height: 3.2rem;
+  font-size: 3.3rem;
+}
+
+.Compliant {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.Information-Request,
+.Information-Fraud,
+.Information-Compliant {
+  background: #01073d;
+  color: white;
+  border-bottom-right-radius: 4rem;
+  display: flex;
+  width: 38.4rem;
+  height: 24.8rem;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1 1 calc(31.333% - 1.25rem);
+  text-align: left;
+  padding-left: 7rem;
+}
+
+.Information-Request img,
+.Information-Fraud img,
+.Information-Compliant img {
+  margin-left: -5rem;
+}
+
+.Information-Request h5 {
+  align-self: stretch;
+  font-family: Space Grotesk;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  width: 29rem;
+}
+
+.Information-Request p {
+  align-self: stretch;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 24rem;
+}
+
+.Information-Fraud h5 {
+  align-self: stretch;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.Information-Fraud p {
+  align-self: stretch;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 23rem;
+}
+
+.Information-Compliant h5 {
+  align-self: stretch;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.Information-Compliant p {
+  align-self: stretch;
+  font-family: Space Grotesk;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 24rem;
+}
+
+#try1 {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: Space Grotesk;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+#try1:hover {
+  color: #01073d;
+  background-color: #fff;
+}
+
+.SS:hover {
+  color: #01073d;
+  background-color: #fff;
+  text-align: center;
+}
+
+.Helpful {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 3.5rem;
+  height: 31.1rem;
+  width: 120.1rem;
+  background-color: #01073d;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.Helpful div h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 3.31rem;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  line-height: 3.2rem;
+  width: 30rem;
+}
+
+.Helpful div h5 {
+  text-align: center;
+  color: #fcfcfc;
+  font-size: 2.3rem;
+  width: 33rem;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  line-height: 3.2rem;
+  width: 40rem;
+}
+
+.btn {
+  text-align: center;
+  color: #01073d;
+  font-size: 2.76rem;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  line-height: 3.2rem;
+  background-color: #fff;
+  width: 23.6rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+}
+
+.btn:hover {
+  background-color: #303030;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #2b305d;
+  min-height: 80vh;
+}
+
+.Properties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+}
+
+.Properties div h5 {
+  font-size: 2.304rem;
+  font-weight: 700;
+  font-family: Space Grotesk;
+  line-height: 3.2rem;
+}
+
+.Popular-States,
+.Popular-Cities,
+.For-Rent,
+.For-Sale,
+.For-Shortlets {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Popular-States h6 a,
+.Popular-Cities h6 a,
+.For-Rent h6 a,
+.For-Sale h6 a,
+.For-Shortlets h6 a {
+  color: #e0e0e0;
+  font-size: 1.92rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+  font-family: Space Grotesk;
+}
+
+.Popular-States h6 a:hover,
+.Popular-Cities h6 a:hover,
+.For-Rent h6 a:hover,
+.For-Sale h6 a:hover,
+.For-Shortlets h6 a:hover {
+  color: #01073d;
+  background-color: #2b305d;
+  padding: 0;
+}
+
+.newsletters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 29rem;
+  margin-top: 8rem;
+}
+
+.Connect {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#Connect {
+  margin-bottom: 3rem;
+}
+
+.Connect h5 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.Connect-img {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.Connect-img img {
+  width: 3.69rem;
+}
+
+#footer-input {
+  width: 23.6rem;
+  height: 4.8rem;
+  border-radius: 1.2rem 0 0 1.2rem;
+  color: #b3b3b3;
+  font-size: 1.9rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+  font-family: Space Grotesk;
+}
+
+.btn1 {
+  background-color: #01073d;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 1.2rem 1.2rem 0;
+  width: 13rem;
+  height: 4.8rem;
+  font-weight: 700;
+  font-size: 1.9rem;
+  font-weight: 3.2rem;
+  font-family: Space Grotesk;
+  margin-left: -2rem;
+  padding-left: 1rem;
+}
+
+.Email-SignUp a:hover {
+  color: white;
+  background-color: #01073d;
+  padding: 0.03rem;
+}
+
+.Email-SignUp {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+}
+
+.Email-SignUp h5 {
+  font-size: 2rem;
+  font-family: Space Grotesk;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.Copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  bottom: 0;
+  border-top: 0.03rem solid white;
+  padding-top: 0.5rem;
+  align-items: center;
+  margin-top: 5rem;
+  align-content: center;
+  text-align: center;
+}
+
+.Copy h6 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+  font-family: Space Grotesk, sans-serif;
+}
+
+.Privacy {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #01073d;
+    backdrop-filter: blur(30px);
+    top: 45px;
+    right: 0;
+    width: 40%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .nav-links a:hover {
+    color: #01073d;
+    background-color: #fff;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .burger {
+    color: #fff;
+    display: block;
+  }
+}
+/* Extra Large Devices, Desktops */
+@media (max-width: 1360px) {
+  /* Adjustments for screens up to 1200px wide */
+
+  html {
+    font-size: 60%;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    padding: 0 5rem;
+  }
+  header {
+    background-size: cover;
+    min-height: 50vh;
+  }
+
+  .Compliant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+
+  .Helpful {
+    gap: 3.5rem;
+    height: 31.1rem;
+    width: 116rem;
+  }
+}
+
+/* Large Devices, Laptops */
+@media (max-width: 1200px) and (min-width: 1100px) {
+  /* Adjustments for screens up to 992px wide */
+
+  nav {
+    flex-direction: row;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  html {
+    font-size: 60%;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  .Contact-Us h1 {
+    font-size: 4rem;
+  }
+  .Contact-Us h6 {
+    font-size: 1.6rem;
+  }
+  .Get-In-Touch h3 {
+    font-size: 2.5rem;
+  }
+  .Get-In-Touch p {
+    width: 35rem;
+  }
+
+  .Other-Requests-h3 {
+    font-size: 2.5rem;
+  }
+  .Compliant {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Medium Devices, Tablets */
+@media (max-width: 1160px) {
+  /* Adjustments for screens up to 768px wide */
+
+  html {
+    font-size: 56%;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+
+  .Other-Requests {
+    min-height: 80vh;
+  }
+
+  .Compliant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+
+  footer {
+    min-height: 73vh;
+  }
+}
+
+/* Small Devices, Mobile Phones */
+@media (max-width: 1070px) {
+  /* Adjustments for screens up to 576px wide */
+
+  html {
+    font-size: 50%;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  header {
+    min-height: 55vh;
+    background-size: cover;
+  }
+  .Contact-Us h1 {
+    font-size: 4rem;
+    color: #01073d;
+  }
+  span {
+    color: white;
+  }
+  .Contact-Us h6 {
+    font-size: 1.8rem;
+    color: #01073d;
+  }
+  section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Get-In-Touch p {
+    width: 68%;
+  }
+  input,
+  textarea {
+    width: 64%;
+  }
+
+  .xx-img {
+    width: 50rem;
+    height: 60rem;
+    margin-left: -20rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 80vh;
+  }
+
+  footer {
+    min-height: 67vh;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 40%;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+
+  .Contact-Us h1 {
+    font-size: 4rem;
+    color: #fff;
+  }
+  span {
+    color: white;
+  }
+  .Contact-Us h6 {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .Other-Requests {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20rem;
+  }
+
+  footer {
+    min-height: 50vh;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+
+  header {
+    background-size: cover;
+    min-height: 40vh;
+  }
+
+  .Detail div img {
+    width: 50px;
+  }
+
+  .Detail div h5 {
+    align-self: stretch;
+    font-size: 2.31rem;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    line-height: 3.2rem;
+  }
+
+  .Detail div h6 {
+    color: #808080;
+    width: 22.4rem;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+
+  .xx-img {
+    width: 35rem;
+    height: 60rem;
+    margin-left: -30rem;
+  }
+
+  .Get-In-Touch p {
+    width: 60%;
+  }
+  input,
+  textarea {
+    width: 50%;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+  }
+
+  .Other-Requests {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Helpful {
+    height: 31.1rem;
+    width: 95.1rem;
+    margin-bottom: 1rem;
+    margin-top: -7rem;
+  }
+
+  .newsletters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10rem;
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 30%;
+  }
+
+  a {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #2b305d;
+    min-height: 33vh;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 40vh;
+  }
+
+  .Other-Requests {
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+  }
+
+  .Helpful {
+    height: 31.1rem;
+    width: 95.1rem;
+    margin-bottom: -10rem;
+  }
+
+  .Contact-Us h1 {
+    font-size: 7rem;
+  }
+
+  .Contact-Us h6 {
+    font-size: 3rem;
+    line-height: 7.2rem;
+  }
+}

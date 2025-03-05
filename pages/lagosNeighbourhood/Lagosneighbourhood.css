@@ -1,0 +1,1565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  background-color: #01073d;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.burger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover {
+  background-color: #fff;
+  color: #01073d;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+      display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #01073d;
+    backdrop-filter: blur(30px);
+    top: 45px;
+    right: 0;
+    width: 40%;
+    text-align: center;
+  }
+
+.nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .nav-links a:hover {
+    color: #01073d;
+    background-color: #fff;
+  }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero-text-container,
+  .lagos-container,
+  .middle-container,
+  .popular-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .select-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .frame-405,
+  .btn,
+  .btn1 {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 601px) and (max-width: 1023px) {
+  body {
+    font-size: 50%;
+  }
+
+  .surround-check-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    row-gap: 0px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 5rem;
+  }
+
+  .surround-check-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    row-gap: 1.25rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 5rem;
+  }
+
+  .surround-check-item {
+    display: flex;
+    flex-direction: row;
+    gap: 2.187rem;
+    row-gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 5rem;
+  }
+
+  .lagos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    row-gap: 0rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 35.125rem;
+    left: 5rem;
+    position: relative;
+  }
+
+  .lagos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    row-gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 21.875rem;
+    position: relative;
+  }
+
+  .lagos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    row-gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 21.875rem;
+    position: relative;
+  }
+
+  /* Base styles */
+  .lagos-container {
+    padding: 20px;
+  }
+
+  .lagos-content {
+    text-align: center;
+  }
+
+  .popular-neighborhoods-in-lagos {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .check-surroundings {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  /* Responsive styles */
+  .surround-check-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .surround-check-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .surround-check-item1 {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 120px;
+    margin: 5px;
+  }
+
+  .frame-405 {
+    margin-top: 20px;
+  }
+
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  /* Media queries for responsive design */
+  @media (min-width: 601px) and (max-width: 1023px) {
+    .lagos-content {
+      padding: 10px;
+    }
+
+    .popular-neighborhoods-in-lagos {
+      font-size: 20px;
+    }
+
+    .check-surroundings {
+      font-size: 14px;
+    }
+
+    .surround-check-content {
+      gap: 10px;
+    }
+
+    .surround-check-item1 {
+      width: 100px;
+      padding: 8px 12px;
+    }
+
+    .frame-405 {
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .surround-check-content {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .surround-check-item1 {
+      width: 100%;
+    }
+  }
+}
+.lagos-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  row-gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 21.875rem;
+  position: relative;
+}
+
+.navigation-header {
+  background-color: #01073d;
+  padding: 1rem;
+  max-width: 100%;
+  height: 13vh;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  color: #ffffff;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-item {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link.login {
+  color: #fff;
+}
+
+.nav-link.signup {
+  color: #fff;
+}
+.nav-link:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  min-height: 31.25rem;
+  object-fit: cover;
+}
+
+.lagos-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-family: var(--medium-h3-font-family, "SpaceGrotesk-Medium", sans-serif);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.select-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 3rem;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 10rem;
+  height: 7vh;
+  border: 1px solid white;
+}
+
+.select-container > i {
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+
+.select-container > input {
+  flex: 1;
+  height: 0.5rem;
+}
+
+.select-container {
+  flex: 1;
+}
+
+.select-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: var(--medium-h3-font-family, "SpaceGrotesk-Medium", sans-serif);
+}
+
+.select-container select {
+  width: 35rem;
+  padding: 0.1rem;
+  border-radius: 4rem;
+  border: none;
+  font-size: 1.5rem;
+  font-family: var(--medium-h3-font-family, "SpaceGrotesk-Medium", sans-serif);
+}
+
+.hero-text-container {
+  margin: 2rem 0;
+  max-width: 75rem;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.frame-1028 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  row-gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 75.31rem;
+  position: absolute;
+  left: 7.31rem;
+  top: 49.06rem;
+}
+.hero-text {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.lagos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  row-gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 65.125rem;
+  left: 15rem;
+  position: relative;
+}
+.lagos-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  row-gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 51.875rem;
+  position: relative;
+}
+.popular-neighborhoods-in-lagos {
+  color: #000000;
+  text-align: left;
+  font-family: var(--medium-h3-font-family, "SpaceGrotesk-Medium", sans-serif);
+  font-size: var(--medium-h3-font-size, 33.18000030517578px);
+  line-height: var(--medium-h3-line-height, 32px);
+  font-weight: var(--medium-h3-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+}
+.check-surroundings {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.surround-check-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  row-gap: 0px;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.surround-check-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  row-gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.surround-check-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4.375rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.surround-check-item1 {
+  background: var(--primarycolor5-1001, #cccdd8);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 13rem;
+  height: 7.5vh;
+  position: relative;
+}
+.lekki {
+  color: var(--primarycolor5-6001, #01073d);
+  text-align: left;
+  font-family: var(--medium-h4-font-family, "SpaceGrotesk-Medium", sans-serif);
+  font-size: var(--medium-h4-font-size, 27.649999618530273px);
+  line-height: var(--medium-h4-line-height, 32px);
+  font-weight: var(--medium-h4-font-weight, 500);
+  position: relative;
+}
+.frame-728 {
+  display: flex;
+  flex-direction: row;
+  gap: 4.375rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-405 {
+  background: var(--primarycolor5-5001, #2b305d);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: var(--primarycolor5-6001, #01073d);
+  border-width: 0.0625rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 12.125rem;
+  height: 4rem;
+  position: relative;
+}
+
+.frame-405:hover {
+  background: lightseagreen;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.button {
+  color: var(--secondarycolor2-6001, #ffffff);
+  text-align: center;
+  font-family: var(--medium-h4-font-family, "SpaceGrotesk-Medium", sans-serif);
+  font-size: var(--medium-h4-font-size, 27.649999618530273px);
+  line-height: var(--medium-h4-line-height, 32px);
+  font-weight: var(--medium-h4-font-weight, 500);
+  position: relative;
+}
+.btn:hover {
+  background: lightseagreen;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.popular-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  row-gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  left: 15rem;
+  position: relative;
+}
+.frame-1017 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  row-gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 52rem;
+  position: relative;
+}
+.popular-landmarks-in-lagos {
+  color: #000000;
+  text-align: left;
+  font-family: var(--medium-h3-font-family, "SpaceGrotesk-Medium", sans-serif);
+  font-size: var(--medium-h3-font-size, 33.18000030517578px);
+  line-height: var(--medium-h3-line-height, 32px);
+  font-weight: var(--medium-h3-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+}
+.known-for-having-notable-landmarks-here-are-some-popular-landmarks-in-lagos-these-areas-offer-a-blend-of-modern-living-and-local-charm-making-them-perfect-places-to-call-home {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.frame-734 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  row-gap: 0px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-733 {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  row-gap: 0.188;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-731 {
+  display: flex;
+  flex-direction: row;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.component-42 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 24rem;
+  position: relative;
+}
+.frame-324 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-324 img {
+  height: 15rem;
+}
+
+.image-56 {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  left: -0.938rem;
+  top: -2.438rem;
+  object-fit: cover;
+}
+.lekki-conservation-centre {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.component-45 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 24rem;
+  position: relative;
+}
+.frame-495 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-495 img {
+  height: 15rem;
+}
+.image-57 {
+  width: 26.313rem;
+  height: 17.805rem;
+  position: absolute;
+  left: -1.188rem;
+  top: -1.6225rem;
+  object-fit: cover;
+}
+.national-museum {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.component-44 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 24rem;
+  position: relative;
+}
+.frame-496 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-496 img {
+  height: 15rem;
+}
+.image-63 {
+  width: 26.719rem;
+  height: 17.813rem;
+  position: absolute;
+  left: -1.75rem;
+  top: -1.688rem;
+  object-fit: cover;
+}
+.eko-atlantic {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.frame-732 {
+  display: flex;
+  flex-direction: row;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.component-41 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 24rem;
+  position: relative;
+}
+.frame-498 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-498 img {
+  height: 15rem;
+}
+.image-61 {
+  width: 24rem;
+  height: 16rem;
+  position: absolute;
+  left: 0px;
+  top: 0.79rem;
+  object-fit: cover;
+}
+.nike-art-gallery {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.component-43 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 24rem;
+  position: relative;
+}
+.frame-499 {
+  background: #474444;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+  width: 24rem;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-499 img {
+  height: 15rem;
+}
+.image-60 {
+  width: 26.5rem;
+  height: 17.976rem;
+  position: absolute;
+  left: -1.25rem;
+  top: -2.207rem;
+  object-fit: cover;
+}
+.the-cathedral-church-of-christ-marina {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.component-46 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 24rem;
+  position: relative;
+}
+.frame-497 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-497 img {
+  height: 15rem;
+}
+.image-64 {
+  width: 29.97rem;
+  height: 16.56rem;
+  position: absolute;
+  left: -1.88rem;
+  top: -0.56rem;
+  object-fit: cover;
+}
+
+.freedom-park {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 27.649999618530273px);
+  line-height: var(--regular-h4-line-height, 32px);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+.btn {
+  background: var(--primarycolor5-5001, #2b305d);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: var(--primarycolor5-6001, #01073d);
+  border-width: 0.0625rem;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 12.125rem;
+  right: 1.844rem;
+  height: 4rem;
+  margin-right: 28.2rem;
+  position: relative;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  row-gap: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  left: 15rem;
+  position: relative;
+}
+
+.frame-1024 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  row-gap: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 51.875rem;
+  position: relative;
+}
+
+.featured-neighborhood-highlights {
+  color: #000000;
+  text-align: left;
+  font-family: var(--medium-h3-font-family, "SpaceGrotesk-Medium", sans-serif);
+  font-size: var(--medium-h3-font-size, 2.074375rem);
+  line-height: var(--medium-h3-line-height, 2rem);
+  font-weight: var(--medium-h3-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+}
+.get-a-deeper-insight-into-what-makes-each-neighborhood-special-from-parks-and-schools-to-restaurants-and-shopping-centers-find-out-what-you-can-expect-from-living-in-these-areas {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 1.728rem);
+  line-height: var(--regular-h4-line-height, 2rem);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  row-gap: 0;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-737 {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  row-gap: 3rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-735 {
+  display: flex;
+  flex-direction: row;
+  gap: 9.75rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.component-50 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 32.625rem;
+  position: relative;
+}
+
+.frame-329 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.frame-329 img {
+  height: 15rem;
+}
+
+.image-68 {
+  width: 32.625rem;
+  height: 18.2rem;
+  position: absolute;
+  left: 0;
+  top: -2rem;
+  object-fit: cover;
+}
+
+.schools-in-ikoyi {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 1.728rem);
+  line-height: var(--regular-h4-line-height, 2rem);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+.component-48 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 32.625rem;
+  position: relative;
+}
+
+.component-48 img {
+  height: 14.7rem;
+  border-radius: 0.75rem;
+}
+
+.frame-330 {
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+  width: 32.625rem;
+  height: 14.5rem;
+  position: relative;
+  overflow: visible;
+}
+
+.churches-in-lekki {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 1.728rem);
+  line-height: var(--regular-h4-line-height, 2rem);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+.frame-736 {
+  display: flex;
+  flex-direction: row;
+  gap: 9.375rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.component-47 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 32.625rem;
+  position: relative;
+}
+
+.frame-331 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.frame-331 img {
+  height: 15rem;
+}
+
+.restaurants-in-v-i {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 1.728rem);
+  line-height: var(--regular-h4-line-height, 2rem);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+.component-49 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 32.625rem;
+  position: relative;
+}
+
+.frame-332 {
+  background: #474444;
+  border-radius: 0.75rem;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 14.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.frame-332 img {
+  height: 15rem;
+}
+
+.gyms-in-amuwo {
+  color: #000000;
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: var(--regular-h4-font-size, 1.728rem);
+  line-height: var(--regular-h4-line-height, 2rem);
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+.btn1 {
+  background: var(--primarycolor5-5001, #2b305d);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: var(--primarycolor5-6001, #01073d);
+  border-width: 0.0625rem;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 12.125rem;
+  height: 4rem;
+  right: 30.5rem;
+  position: relative;
+}
+
+.btn1:hover {
+  background: lightseagreen;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.slide-point {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 40.5vh;
+  width: 100%;
+  left: 15rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-334 {
+  background: #474444;
+  width: 75.125rem;
+  height: 20.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.frame-334 img {
+  height: 20.5rem;
+}
+
+.frame-4992 {
+  background: #474444;
+  width: 75.125rem;
+  height: 20.5rem;
+  position: absolute;
+  left: 75.125rem;
+  top: 0;
+  overflow: hidden;
+}
+
+.image-69 {
+  width: 93.25rem;
+  height: 62.14rem;
+  position: absolute;
+  left: -5.75rem;
+  top: -11.62rem;
+  object-fit: cover;
+}
+
+.frame-500 {
+  background: #474444;
+  width: 75.125rem;
+  height: 20.5rem;
+  position: absolute;
+  left: 150.25rem;
+  top: 0;
+  overflow: hidden;
+}
+
+.image-71 {
+  width: 90rem;
+  height: 50.1rem;
+  position: absolute;
+  left: -4.5rem;
+  top: -10.05rem;
+  object-fit: cover;
+}
+
+.frame-739 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  row-gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  left: 15rem;
+  position: relative;
+}
+
+.faq {
+  color: var(--greycolors1-10001, #222222);
+  font-family: var(--bold-h1-font-family, "SpaceGrotesk-Bold", sans-serif);
+  font-size: 2.986rem;
+  line-height: 2rem;
+  font-weight: var(--bold-h1-font-weight, 700);
+  position: relative;
+  left: 35.0625rem;
+  align-self: stretch;
+}
+
+.faq-container {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1.875rem;
+  position: relative;
+}
+
+.faq-content-1 {
+  background: var(--primarycolor5-6001, #01073d);
+  border-radius: 1.25rem 1.25rem 0 0;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  row-gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.how-do-i-find-specific-neighborhoods-on-this-page {
+  color: var(--greycolors1-1001, #e0e0e0);
+  text-align: center;
+  font-family: var(
+    --regular-h4-font-family,
+    "SpaceGrotesk-Regular",
+    sans-serif
+  );
+  font-size: 1.728rem;
+  line-height: 2rem;
+  font-weight: var(--regular-h4-font-weight, 400);
+  position: relative;
+}
+
+.faq-content-2 {
+  background: var(--primarycolor5-6001, #01073d);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  row-gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  position: absolute;
+  left: 0;
+  top: 6.625rem;
+}
+
+.faq-content-1 img,
+.faq-content-2 img,
+.faq-content-3 img,
+.faq-content-4 img,
+.faq-content-5 img {
+  flex-shrink: 0;
+  width: 3.125rem;
+  height: 3.125rem;
+  position: relative;
+  overflow: visible;
+}
+
+.faq-content-3 {
+  background: var(--primarycolor5-6001, #01073d);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  row-gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  position: absolute;
+  left: 0;
+  top: 13.25rem;
+}
+
+.faq-content-4 {
+  background: var(--primarycolor5-6001, #01073d);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  row-gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  position: absolute;
+  left: 0;
+  top: 19.875rem;
+}
+
+.faq-content-5 {
+  background: var(--primarycolor5-6001, #01073d);
+  border-radius: 0 0 1.25rem 1.25rem;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  row-gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  position: absolute;
+  left: 0;
+  top: 26.5rem;
+}
+
+.footer {
+  background: var(--primarycolor5-5001, #2b305d);
+  width: 100%;
+  height: 4.875rem;
+  position: absolute;
+  left: 0;
+  top: 277.5625rem;
+  overflow: hidden;
+}
+
+.twemoji-copyright {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  left: 7.625rem;
+  top: 1.8125rem;
+  overflow: visible;
+}
+
+._2024-haven-hunt-allrights-reserved,
+.cookies,
+.terms-of-service,
+.privacy-policy {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--light-h6-font-family, "SpaceGrotesk-Light", sans-serif);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: var(--light-h6-font-weight, 300);
+  position: absolute;
+}
+
+._2024-haven-hunt-allrights-reserved {
+  left: 9.5rem;
+  top: 1.5rem;
+}
+
+.cookies {
+  left: 77.875rem;
+  top: 1.375rem;
+}
+
+.terms-of-service {
+  left: 66.375rem;
+  top: 1.375rem;
+}
+
+.privacy-policy {
+  left: 56.25rem;
+  top: 1.375rem;
+}

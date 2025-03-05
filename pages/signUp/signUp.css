@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Space Grotesk';
+}
+ nav{
+    background-color: #01073D;
+ }
+ nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 0.625rem ;
+    padding: 3.5rem 10rem;
+    height: 6.421vh;
+ }
+
+.logo{
+
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 700;
+font-size: 5rem;
+line-height: 5.875rem;
+text-align: center;
+color: #FFFFFF;
+}
+
+nav ul a {
+    font-family: 'Space Grotesk';
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 1.5rem;
+    flex-grow: 0;
+    order: 0;
+}
+
+.form{
+    width:79%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    box-shadow: 0px 0 10px 0px #B2A9A9;
+    border-radius: 18px;
+    padding: 4rem 0;
+}
+
+.form h1{
+    text-align: center;
+    color: #01073D;
+    font-size: 3.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+#form{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+label{
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #000000;
+    font-weight: 6;
+    text-transform: capitalize;
+}
+
+#form input{
+    padding:0.8rem 1.5rem;
+    margin-bottom: 2.5rem;
+}
+::placeholder{
+    color: #B2A9A9;
+}
+
+.submitButton{
+    width: 100%;
+    background-color: #01073D;
+    color: #E0E0E0;
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem 0.5rem;
+    font-size: 1.900rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.otherLogins{
+    text-align: center;
+}
+.existingAccount{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border-bottom: .2rem #5f5f5e solid;
+    padding-bottom: 2.5rem;
+    margin-bottom: 4rem;
+}
+.existing{
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: #A3A393;
+}
+
+.existingLink{
+    color: #01073D;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.absolute{
+    position: absolute;
+    width: 2%;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 1.7rem;
+    font-weight: 600;
+    top: 81.3rem;
+    left: 48%;
+}
+
+.socialLogins{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.socialLogins a{
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #01073D;
+    border: 0.063rem #01073D solid;
+    border-radius: 0.75rem;
+    padding: 1.5rem 0;
+}
+
+.registering{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #474444;
+    line-height: 2rem;
+}
+.termsOfUse{
+    color: #474444;
+}
+
+footer{
+    background-color: #2B305D;
+    margin-top: 7rem;
+    color: #FFFFFF;
+   
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 79%;
+    padding-bottom: 5rem;
+}
+.footerLogo{
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 700;
+font-size: 7rem;
+line-height: 7.618rem;
+color: #CCCDD8;
+margin-bottom: 5rem;
+padding-top: 6rem;
+}
+
+.address{
+font-family: Space Grotesk;
+font-size: 2.1rem;
+font-weight: 600;
+line-height: 2rem;
+text-align: left;
+margin-bottom: 3rem;
+}
+
+.contacts{
+font-size: 2rem;
+font-family: Space Grotesk;
+font-weight: 600;
+line-height: 2rem;
+text-align: left;
+margin-bottom: 2rem;
+}
+.contactSocials{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.secondSection{
+   margin-top: -5rem;
+}
+.message{
+    max-width: 25.5ch;
+font-size: 2rem;
+font-weight: 700;
+line-height: 2.5rem;
+margin: 0 auto;
+margin-bottom: 2rem;
+}
+.secondForm .email{
+    width: 55%;
+    border-radius: 1.2rem 0 0 1.2rem;
+    background-color: #FFFFFF;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+}
+
+.secondForm .signUpButton{
+    border-radius:0 1.2rem 1.2rem 0;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 35%;
+    background-color: #01073D;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.copyright{
+    border-top: 0.063rem #5f5f5e solid;
+    padding: 3rem 0;
+}
+.rightcopy{
+    width: 79%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .copy{
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+
+.rightLinks{
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-right: 2rem;
+}
